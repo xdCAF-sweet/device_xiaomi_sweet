@@ -1,3 +1,6 @@
+on property:ro.boot.hwversion=*
+    setprop ro.boot.hardware.revision ${ro.boot.hwversion}
+
 on init && property:ro.boot.hwc=GLOBAL
     setprop ro.boot.product.hardware.sku sweet
     setprop bluetooth.device.default_name "Redmi Note 10 Pro"    
