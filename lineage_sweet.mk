@@ -20,4 +20,9 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 10 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="sweet_global-user 13 TKQ1.221013.002 V14.0.2.0.TKFMIXM release-keys"
+
+BUILD_FINGERPRINT := Redmi/sweet_global/sweet:13/TKQ1.221013.002/V14.0.2.0.TKFMIXM:user/release-keys
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
