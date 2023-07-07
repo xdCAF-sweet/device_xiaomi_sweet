@@ -1,0 +1,15 @@
+on init && property:ro.boot.hwc=GLOBAL
+    setprop ro.boot.product.hardware.sku sweet
+    setprop bluetooth.device.default_name "Redmi Note 10 Pro"    
+
+on init && property:ro.boot.hwc=JAPAN
+    setprop ro.boot.product.hardware.sku sweet
+    setprop bluetooth.device.default_name "Redmi Note 10 Pro"    
+
+on init && property:ro.boot.hwc=INDIA && property:ro.boot.product.hardware.sku=std
+    setprop ro.boot.product.hardware.sku sweetin
+    setprop bluetooth.device.default_name "Redmi Note 10 Pro"
+
+on init && property:ro.boot.hwc=INDIA && property:ro.boot.product.hardware.sku=pro
+    setprop ro.boot.product.hardware.sku sweetin
+    setprop bluetooth.device.default_name "Redmi Note 10 Pro Max"
